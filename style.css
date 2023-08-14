@@ -1,0 +1,54 @@
+body {
+    font-family: Verdana;
+    background-color: black;
+}
+nav {
+    background-color: gold;
+    display: flex;
+    padding: 1%;
+    justify-content: space-around;
+}
+#logo {
+    width: 5%; 
+}
+.nav {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+.nav:hover{
+    text-decoration: underline;
+    color: white;
+    box-shadow: 4px;
+    text-decoration-color: black;
+    text-transform: capitalize;
+    
+
+    
+}
+#text-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Inner_box{
+    display: flex;
+    max-width: 500px;
+    position: relative;
+    display:block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0 15px 20px rgba(0,0,0,100);
+    padding: 30px;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+
+
+
+
