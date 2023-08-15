@@ -1,14 +1,16 @@
 body {
-    font-family: Verdana;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/mountains.png);
 }
 nav {
+    margin: -10px;
     background-color: gold;
     display: flex;
     padding: 1%;
     justify-content: space-around;
 }
 #logo {
-    width: 5%; 
+    width: 2.5%; 
 }
 .nav {
     font-size: 25px;
@@ -36,7 +38,8 @@ nav {
 button:hover{
     border-color:black;
     background:burlywood;
-    box-shadow : -4px 5px 4px rgba(0,0,0,.5);    
+    box-shadow : -4px 5px 4px rgba(0,0,0,.5);   
+ 
 }
 button{
     appearance:none;
@@ -46,7 +49,7 @@ button{
   background-color:black;
   color:#fff;
   font-weight:600;
-  border-radius:5px;
+  border-radius:20px;
   width:100%;
 }
 .text-input {
@@ -63,5 +66,24 @@ button{
     display: flex;
     justify-content: center;
     font-size: 15px;
-    
+}
+.amounts{
+    display: none;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.Inner_box{
+    display: flex;
+    max-width: 500px;
+    position: relative;
+    display:block;
+
+    left: 50%;
+    transform: translate(-50%,50%);
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0 15px 20px rgba(0,0,0,100);
+    padding: 30px;
+    text-align: center;
+    justify-content: flex-start;
 }

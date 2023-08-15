@@ -6,25 +6,39 @@
     <title>Dioxide Tracker</title>
     <link rel="stylesheet" href="tracker.css">
     <script src="script.js" defer></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,300&display=swap" rel="stylesheet">
+    
 <body>
     <nav>
-        <img src="logo.png" id="logo">
+        <img src="images/asdsa.png" id="logo">
         <a href="index.html"><div class="nav">Home</div></a>
         <a href="tracker.html"><div class="nav">Tracker</div></a>
+        <a href="resources.html"><div class="nav">Resources</div></a>
     </nav>
     <div class="main_container">
         <form>
-            <input type="text" placeholder="Enter Month" class="text-input" id="month" required>
+            <input type="text" placeholder="Enter Month" class="text-input" id="month" required maxlength="2" minlength="1">
             <br>
-            <input type="text" placeholder="Enter Day" class="text-input" id="day" required>
+            <input type="text" placeholder="Enter Day" class="text-input" id="day" required maxlength="2" minlength="1">
             <br>
-            <input type="text" placeholder="Enter Year: Ex: 2005" class="text-input" id="year" required>
+            <input type="text" placeholder="Enter Year(Earliest year 2013)" class="text-input" id="year" required maxlength="4" minlength="4">
             <br>
             <button id="click-btn">Search</button >
         </form>
+
     </div>
     <div id="stats">
+        <div id="statsContainer" class="Inner_box">
+            <p id="co2stat" class="Inner_box"></p>
+        </div>
+        <div id="wordsContainer" class="Inner_box"></div>
+            <p class="amounts" class="Inner_box" id="good-amnt"> hfhdsrhdfhdrdf </p>
+            <p class="amounts" class="Inner_box" id="mid-amnt"> adwasdawdasdass  </p>
+            <p class="amounts" class="Inner_box" id="bad-amnt">Having 400ppm of Co2 in the atmosphere isn't only bad for humans but for the environment as well because it is a stark reminder the the world is not on track to limit CO2 emissions and climate impacts. </p>
+            <p class="amounts" class="Inner_box" id="really-bad">  </p>
+        </div>  
     </div>
 </body>
 </html>

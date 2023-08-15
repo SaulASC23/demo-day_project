@@ -1,8 +1,11 @@
 body {
-    font-family: Verdana;
-    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(34,193,195);
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    height: 100vh;
 }
 nav {
+    margin: -10px;
     background-color: gold;
     display: flex;
     padding: 1%;
@@ -38,7 +41,7 @@ nav {
     max-width: 500px;
     position: relative;
     display:block;
-    top: 50%;
+
     left: 50%;
     transform: translate(-50%,50%);
     background: rgba(255,255,255,0.7);
