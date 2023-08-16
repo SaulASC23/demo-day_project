@@ -15,6 +15,8 @@ const mid = document.getElementById("mid-amnt");
 const bad =  document.getElementById("bad-amnt");
 const reallyBad = document.getElementById("really-bad");
 
+const classRef = document.getElementsByClassName("Inner_box");
+
 const body = document.querySelector("body");
 button.onclick = function(event) {
     event.preventDefault();
@@ -50,28 +52,35 @@ button.onclick = function(event) {
                             bad.style.display = "none"
                             reallyBad.style.display = "none"
                             mid.style.display = "none"
+
                             body.style.backgroundImage = "url(images/green.png)";
+
                         }
                         else if (num > 350 && num < 400) {
                             mid.style.display = "flex";
                             good.style.display = "none";
                             bad.style.display = "none"
                             reallyBad.style.display = "none"
+
                             body.style.backgroundImage = "url(images/mid.png)";
+
                         }
                         else if (num > 400 && num < 450) {
                             bad.style.display = "flex";
                             reallyBad.style.display = "none"
                             mid.style.display = "none"
                             good.style.display = "none"
-                            console.log("this works")
-                            body.style.backgroundImage = "url(images/y.png)";
+                            
+                            body.style.backgroundImage = "url(images/yellow.png)";
+
                         }
                         else if (num > 450) {
                             reallyBad.style.display = "flex";
                             good.style.display = "none";
                             bad.style.display = "none"
                             mid.style.display = "none"
+
+
                         }
                     }
                 }

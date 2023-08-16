@@ -74,14 +74,13 @@ button{
 }
 
 .Inner_box{
-    display: flex;
     max-width: 500px;
     position: relative;
-    display:block;
+    display: block;
 
     left: 50%;
     transform: translate(-50%,50%);
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.3);
     box-shadow: 0 15px 20px rgba(0,0,0,100);
     padding: 30px;
     text-align: center;
